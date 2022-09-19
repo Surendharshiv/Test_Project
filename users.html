@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="user.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
+        integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="Topbar">
+        <div class="LeftMenu">
+            <div class="LogoWrapper">
+                <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="Logo">
+                <p class="BrandName">Kafene</p>
+            </div>
+            <nav><a class="MenuItem" href="./orders.html">Orders</a><a class="MenuItem" href="./products.html">Products</a>
+                <a class="MenuItem" href="./users.html" id="users">Users</a>
+            </nav>
+        </div>
+        <p class="MenuItem" style="cursor:pointer;" onclick="logout()" href="">Logout</p>
+    </div>
+    <main class="MainContainer">
+        <div class="PageWrapper">
+            <h1 class="MainHeading">Users</h1>
+            <div class="OrdersWrapper">
+                <form class="FilterWrapper">
+                    <input class="SearchBox" id="SearchBox" type="search" placeholder="Search by Name">
+                    <input type="reset" class="Button" onclick="getUsers()" value="Reset">
+                </form>
+                <div style="width: 100%;">
+                    <table class="OrderTable">
+                        <tr>
+                            <th>ID</th>
+                            <th>User Avatar</th>
+                            <th>Full Name</th>
+                            <th style="min-width: 100px;">DoB</th>
+                            <th>Gender</th>
+                            <th>Current Location</th>
+                        </tr>
+                        <tbody id="TableBody">                          
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./user.js"></script>
+</body>
+
+</html>

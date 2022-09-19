@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F6F7FB;
+}
+
+form,
+input,
+select,
+option,
+textarea {
+    font-family: 'Poppins', sans-serif;
+}
+
+.Topbar {
+    width: 100%;
+    padding: 0 48px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0 2px 4px #ccc;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.LeftMenu {
+    display: flex;
+    align-items: center;
+}
+
+.LogoWrapper {
+    margin-right: 36px;
+    display: flex;
+    align-items: center;
+}
+
+.LogoWrapper img {
+    width: 24px;
+    height: 28px;
+    margin-right: 8px;
+}
+
+.BrandName {
+    font-size: 24px;
+    letter-spacing: -1px;
+    font-weight: 500;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.MenuItem {
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+
+    padding: 24px 0 16px;
+
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    margin: 0 10px;
+}
+
+.MenuItem.Active {
+    color: #20B883;
+    border-bottom: 3px solid #20B883;
+}
+
+.maincontent {
+    margin-top: 100px;
+}
+
+.LoginPage_LoginForm__3_wtJ {
+    box-shadow: 0 0 6px #ccc;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 32px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    border-radius: 6px;
+}
+
+.LoginPage_LoginForm__3_wtJ h1 {
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin: 0 0 24px;
+}
+
+.LoginPage_InputField__2lu1x {
+    width: 100%;
+    padding-top: 16px;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: 0;
+    border-bottom: 2px solid #8c8c8c;
+    margin-bottom: 16px;
+    outline: none;
+}
+
+.LoginPage_Button__qkLR7 {
+    display: inline-block;
+    border-radius: 30px;
+    padding: 14px 36px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: #20b883;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 24px;
+}

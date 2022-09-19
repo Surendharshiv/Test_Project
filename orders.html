@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="order.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
+        integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="Topbar">
+        <div class="LeftMenu">
+            <div class="LogoWrapper">
+                <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="Logo">
+                <p class="BrandName">Kafene</p>
+            </div>
+            <nav><a class="MenuItem" href="./orders.html" id="orders">Orders</a><a class="MenuItem"
+                    href="./products.html">Products</a>
+                <a class="MenuItem" href="./users.html">Users</a>
+            </nav>
+        </div>
+        <p class="MenuItem" style="cursor:pointer ;" onclick="logout()" href="">Logout</p>
+    </div>
+    <main class="MainContainer">
+        <div class="PageWrapper">
+            <h1 class="MainHeading">Orders</h1>
+            <div class="OrdersWrapper">
+                <div class="FilterWrapper">
+                    <h3>Filters</h3>
+                    <div class="FilterOptions">
+                        <p id="count"></p>
+                        <label class="FilterCheckbox">
+                            <input type="checkbox" class="storesCheckBox" name="orders-new" value="New" id="orders"
+                                onclick="getUsers()" checked>New</label>
+                        <label class="FilterCheckbox"><input type="checkbox" class="storesCheckBox" value="Packed"
+                                id="orders" onclick="getUsers()" name="orders-packed" checked="">Packed</label>
+                        <label class="FilterCheckbox"><input type="checkbox" class="storesCheckBox" value="InTransit"
+                                id="orders" onclick="getUsers()" name="orders-transit" checked>InTransit</label>
+                        <label class="FilterCheckbox"><input type="checkbox" class="storesCheckBox" value="Delivered"
+                                id="orders" onclick="getUsers()" name="orders-delivered" checked="">Delivered</label>
+                    </div>
+                </div>
+                <div style="width: 100%;">
+                    <table class="OrderTable">
+                        <tr>
+                            <th>ID</th>
+                            <th>Customer</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                        <tbody class="TableBody">
+                        </tbody>
+                    </table>
+                </div>
+    </main>
+    <script src="./order.js"></script>
+</body>
+
+</html>
